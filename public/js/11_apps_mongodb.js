@@ -68,10 +68,10 @@ app.post('/modifier/:id', (req, res) => {
  var id = req.params.id
  console.log(id)
  console.log(req)
- db.collection('adresse')
- .findOneAndUpdate({"_id": ObjectID(req.params.id)}, req.body ,(err, resultat) => {
+ /*db.collection('adresse')
+ .findOneAndUpdate({"_id": ObjectID(req.params.id)},  ,(err, resultat) => {
 
 if (err) return console.log(err)
  res.redirect('/')  // redirige vers la route qui affiche la collection
- })
+ })*/
 })
